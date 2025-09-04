@@ -21,7 +21,13 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "paths": {
+      "vehicle-drb-number": [
+        "dist/vehicle-drb-number/vehicle-drb-number",
+        "dist/vehicle-drb-number"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
