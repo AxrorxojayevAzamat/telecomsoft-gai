@@ -7,8 +7,7 @@ import { VehicleDrbNumberComponent } from './vehicle-drb-number.component';
   declarations: [
     VehicleDrbNumberComponent
   ],
-  imports: [
-  ],
+  imports: [],
   exports: [
     VehicleDrbNumberComponent
   ]
