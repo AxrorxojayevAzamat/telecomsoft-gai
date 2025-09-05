@@ -1,0 +1,19 @@
+<div [class]="colorMode + ' ' + size">
+  <div class="drbNum-container" [ngClass]="cssClass" *ngIf="ownerType > -1">
+    <div class="drbImg">
+      <div class="drbImgRegion" *ngIf="regionCode">
+        <span class="region-code">{{regionCode}}</span>
+      </div>
+      <div class="drbImgNum" [ngClass]="{'drbImgUzbFlag': !cssClass.length && ownerType != 6}">
+        <img src="/assets/images/uzb_flag.jpg" class="uzb-government-flag" *ngIf="ownerType == 6">
+        <span *ngIf="series[0]">{{series[0]}}</span>
+        <span class="number">{{this.number}}</span>
+        <span *ngIf="series[1]">{{series[1]}}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-container *ngIf="!number && _drb">
+  {{ _drb }}
+</ng-container>

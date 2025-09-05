@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap');
+
+.big {
+  --size: 28px;
+}
+
+.middle {
+  --size: 24px;
+}
+
+.very_big {
+  --size: 55px;
+}
+
+.drbNum-container {
+  --color: #353535;
+  --backgroundColor: #ffffff;
+  padding: 0 2px 5px 0;
+  background-color: var(--backgroundColor);
+  border-radius: 6px;
+  width: max-content;
+  /* margin: 0 auto; */
+}
+
+.gray {
+  .drbNum-container {
+    --backgroundColor: #6E6E71;
+    --color: #fff;
+  }
+
+  .drbImg {
+    background: transparent;
+  }
+}
+
+
+.greenDrbNum {
+  --color: #ffffff;
+  --backgroundColor: #67b354;
+}
+
+.blueDrbNum {
+  --color: #ffffff;
+  --backgroundColor: #4c33c7;
+}
+
+.yellowDrbNum {
+  --color: #353535;
+  --backgroundColor: #eecf40;
+}
+
+.uzb-government-flag {
+  width: 50px;
+  height: 34px;
+  margin: 0 6px -7px -10px;
+}
+
+.drbImg {
+  position: relative;
+  border: 3px solid var(--color);
+  border-radius: 4px;
+  padding-left: 10px;
+  width: max-content;
+  overflow: hidden;
+  background: #f6f6f678;
+
+  &:after,
+  &:before {
+    position: absolute;
+    top: 45%;
+    width: 3px;
+    height: 3px;
+    display: block;
+    content: "";
+    background: #949494;
+    border-radius: 50%;
+  }
+
+  &:before {
+    left: 3px;
+  }
+
+  &:after {
+    right: 3px;
+  }
+
+  div {
+    display: inline-block;
+    height: 100%;
+    /* margin-bottom: 0px; */
+    font-size: var(--size);
+    font-family: roadNumbers;
+    font-weight: 600;
+    color: var(--color);
+    line-height: 1.2;
+  }
+}
+
+.drbImgRegion {
+  text-align: center;
+  border-right: 2px solid var(--color);
+  padding-right: 2px;
+
+  &.electro-car {
+    background-color: #92e874;
+  }
+
+  .region-code {
+    font-size: var(--size);
+  }
+}
+
+.drbImgNum {
+  text-align: left;
+  letter-spacing: 2px;
+  padding: 0 3px;
+
+  span {
+    padding: 0 2px !important;
+
+    &.number {
+      padding: 0 4px;
+    }
+  }
+}
+
+.drbImgUzbFlag {
+  background: url('/assets/images/numberBlockBG.png') no-repeat right center;
+  background-size: 11% 65%;
+  padding-right: 16px;
+  margin-right: 4px;
+  margin-left: 0px;
+}
